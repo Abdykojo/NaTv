@@ -4,13 +4,12 @@ import kg.megacom.NaTv.models.dto.OrderDetailsDto;
 import kg.megacom.NaTv.models.dto.OrdersDto;
 import kg.megacom.NaTv.models.entity.Discounts;
 import kg.megacom.NaTv.models.mapper.OrderDetailMapper;
-import kg.megacom.NaTv.models.mapper.OrdersMapper;
-import kg.megacom.NaTv.models.repository.DaysRepository;
+
 import kg.megacom.NaTv.models.repository.DiscountsRepository;
 import kg.megacom.NaTv.models.repository.OrderDetailRepository;
-import kg.megacom.NaTv.models.repository.OrdersRepository;
+
 import kg.megacom.NaTv.request.ChannelsRequest;
-import kg.megacom.NaTv.request.OrderRequest;
+
 import kg.megacom.NaTv.services.ChannelsServices;
 import kg.megacom.NaTv.services.DaysServices;
 import kg.megacom.NaTv.services.OrderDetailServices;
