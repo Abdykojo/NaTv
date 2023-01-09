@@ -1,20 +1,15 @@
 package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.OrderDetailsDto;
-import kg.megacom.NaTv.models.dto.OrdersDto;
 import kg.megacom.NaTv.models.entity.Discounts;
 import kg.megacom.NaTv.models.mapper.OrderDetailMapper;
 
 import kg.megacom.NaTv.models.repository.DiscountsRepository;
 import kg.megacom.NaTv.models.repository.OrderDetailRepository;
-
 import kg.megacom.NaTv.request.ChannelsRequest;
-
 import kg.megacom.NaTv.services.ChannelsServices;
 import kg.megacom.NaTv.services.DaysServices;
 import kg.megacom.NaTv.services.OrderDetailServices;
-import kg.megacom.NaTv.services.OrdersServices;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
