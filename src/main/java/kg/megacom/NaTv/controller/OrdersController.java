@@ -3,8 +3,7 @@ package kg.megacom.NaTv.controller;
 import io.swagger.annotations.Api;
 
 import io.swagger.annotations.ApiOperation;
-import kg.megacom.NaTv.models.dto.OrdersDto;
-import kg.megacom.NaTv.request.OrderRequest;
+import kg.megacom.NaTv.models.request.OrderRequest;
 import kg.megacom.NaTv.services.OrdersServices;
 import kg.megacom.NaTv.swagger.Swagger2Config;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,12 +2,11 @@ package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.DaysDto;
 import kg.megacom.NaTv.models.dto.OrdersDto;
-import kg.megacom.NaTv.models.mapper.DaysMapper;
+import kg.megacom.NaTv.mapper.DaysMapper;
 import kg.megacom.NaTv.models.repository.DaysRepository;
 import kg.megacom.NaTv.models.repository.OrderDetailRepository;
-import kg.megacom.NaTv.request.ChannelsRequest;
-import kg.megacom.NaTv.request.DaysRequest;
-import kg.megacom.NaTv.request.OrderRequest;
+import kg.megacom.NaTv.models.request.ChannelsRequest;
+import kg.megacom.NaTv.models.request.DaysRequest;
 import kg.megacom.NaTv.services.DaysServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

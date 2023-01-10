@@ -1,13 +1,14 @@
-package kg.megacom.NaTv.request;
+package kg.megacom.NaTv.models.request;
 
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
+import java.math.BigDecimal;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class DaysRequest {
-    String day;
+public class PricesRequest {
+    BigDecimal price;
 }

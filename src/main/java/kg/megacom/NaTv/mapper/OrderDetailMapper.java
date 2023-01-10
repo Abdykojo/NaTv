@@ -1,6 +1,5 @@
-package kg.megacom.NaTv.models.mapper;
+package kg.megacom.NaTv.mapper;
 
-import com.fasterxml.jackson.databind.ser.Serializers;
 import kg.megacom.NaTv.models.dto.OrderDetailsDto;
 import kg.megacom.NaTv.models.entity.OrderDetail;
 import org.mapstruct.Mapper;

@@ -1,7 +1,5 @@
-package kg.megacom.NaTv.request;
+package kg.megacom.NaTv.models.request;
 
-import kg.megacom.NaTv.models.entity.Channels;
-import kg.megacom.NaTv.models.entity.Prices;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;

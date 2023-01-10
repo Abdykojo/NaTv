@@ -1,4 +1,4 @@
-package kg.megacom.NaTv.models.mapper;
+package kg.megacom.NaTv.mapper;
 
 import kg.megacom.NaTv.models.dto.OrdersDto;
 import kg.megacom.NaTv.models.entity.Orders;

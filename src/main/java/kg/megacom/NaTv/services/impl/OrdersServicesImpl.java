@@ -2,11 +2,11 @@ package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.OrderDetailsDto;
 import kg.megacom.NaTv.models.dto.OrdersDto;
-import kg.megacom.NaTv.models.mapper.OrdersMapper;
+import kg.megacom.NaTv.mapper.OrdersMapper;
 import kg.megacom.NaTv.models.repository.ChannelsRepository;
 import kg.megacom.NaTv.models.repository.OrderDetailRepository;
 import kg.megacom.NaTv.models.repository.OrdersRepository;
-import kg.megacom.NaTv.request.OrderRequest;
+import kg.megacom.NaTv.models.request.OrderRequest;
 import kg.megacom.NaTv.response.ChanResponse;
 import kg.megacom.NaTv.response.OrderResponse;
 import kg.megacom.NaTv.services.ChannelsServices;

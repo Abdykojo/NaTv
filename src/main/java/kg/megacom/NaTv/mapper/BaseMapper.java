@@ -1,4 +1,4 @@
-package kg.megacom.NaTv.models.mapper;
+package kg.megacom.NaTv.mapper;
 
 import java.util.List;
 

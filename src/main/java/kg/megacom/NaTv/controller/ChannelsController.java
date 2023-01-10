@@ -1,10 +1,7 @@
 package kg.megacom.NaTv.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import kg.megacom.NaTv.models.dto.ChannelsDto;
-import kg.megacom.NaTv.models.repository.ChannelsRepository;
 import kg.megacom.NaTv.services.ChannelsServices;
 import kg.megacom.NaTv.swagger.Swagger2Config;
 import org.springframework.beans.factory.annotation.Autowired;

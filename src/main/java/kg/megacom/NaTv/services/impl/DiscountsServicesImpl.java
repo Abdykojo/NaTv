@@ -1,9 +1,8 @@
 package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.DiscountDto;
-import kg.megacom.NaTv.models.mapper.DiscountsMapper;
+import kg.megacom.NaTv.mapper.DiscountsMapper;
 import kg.megacom.NaTv.models.repository.DiscountsRepository;
-import kg.megacom.NaTv.response.DiscountMinDaysResponse;
 import kg.megacom.NaTv.services.DiscountsServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

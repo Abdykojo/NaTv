@@ -2,7 +2,8 @@ package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.microservices.FileServiceFeign;
 import kg.megacom.NaTv.models.dto.ChannelsDto;
-import kg.megacom.NaTv.models.mapper.ChannelsMapper;
+import kg.megacom.NaTv.models.entity.Channels;
+import kg.megacom.NaTv.mapper.ChannelsMapper;
 import kg.megacom.NaTv.models.repository.ChannelsRepository;
 import kg.megacom.NaTv.models.repository.DiscountsRepository;
 import kg.megacom.NaTv.response.ChannelRespInt;
@@ -79,6 +80,10 @@ public class ChannelsServicesImpl implements ChannelsServices {
     public String saveAll(String name, int orderNum, MultipartFile multipartFile,Boolean isActive) {
         ChannelsDto dto=new ChannelsDto();
         dto.setName(name);
+        Channels channels =rep.orderNums(orderNum).orElse(null);
+        if(channels!=null){
+            throw new RuntimeException("Данный номер уже занят");
+        }else
         dto.setOrderNum(orderNum);
         dto.setActive(isActive);
         dto.setPhoto(fileServiceFeign.sendPhoto(multipartFile).getDownloadUri());

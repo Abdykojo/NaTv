@@ -1,8 +1,7 @@
 package kg.megacom.NaTv.services;
 
 import kg.megacom.NaTv.models.dto.OrderDetailsDto;
-import kg.megacom.NaTv.models.dto.OrdersDto;
-import kg.megacom.NaTv.request.ChannelsRequest;
+import kg.megacom.NaTv.models.request.ChannelsRequest;
 
 import java.math.BigDecimal;
 import java.util.List;

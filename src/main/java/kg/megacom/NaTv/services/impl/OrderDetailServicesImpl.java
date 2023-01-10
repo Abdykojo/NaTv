@@ -2,11 +2,11 @@ package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.OrderDetailsDto;
 import kg.megacom.NaTv.models.entity.Discounts;
-import kg.megacom.NaTv.models.mapper.OrderDetailMapper;
+import kg.megacom.NaTv.mapper.OrderDetailMapper;
 
 import kg.megacom.NaTv.models.repository.DiscountsRepository;
 import kg.megacom.NaTv.models.repository.OrderDetailRepository;
-import kg.megacom.NaTv.request.ChannelsRequest;
+import kg.megacom.NaTv.models.request.ChannelsRequest;
 import kg.megacom.NaTv.services.ChannelsServices;
 import kg.megacom.NaTv.services.DaysServices;
 import kg.megacom.NaTv.services.OrderDetailServices;
@@ -94,8 +94,6 @@ public class OrderDetailServicesImpl implements OrderDetailServices {
         System.out.println(list+"list");
         bigList.put("pricesWithoutDiscount", discPrice);
         System.out.println(discPrice+"priceWd");
-
-      //  bigList.put("pricesWithoutDiscount",noDiscPrice);
 
         return bigList;
     }

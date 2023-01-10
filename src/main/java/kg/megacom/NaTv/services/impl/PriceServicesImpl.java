@@ -1,7 +1,7 @@
 package kg.megacom.NaTv.services.impl;
 
 import kg.megacom.NaTv.models.dto.PricesDto;
-import kg.megacom.NaTv.models.mapper.PricesMapper;
+import kg.megacom.NaTv.mapper.PricesMapper;
 import kg.megacom.NaTv.models.repository.PricesRepository;
 import kg.megacom.NaTv.services.PriceServices;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface ChannelsRepository extends JpaRepository<Channels,Long> {
@@ -29,4 +30,8 @@ public interface ChannelsRepository extends JpaRepository<Channels,Long> {
     List<ChannelRespInt> filtrationPercent (String filter);
     @Query(value = "select c.id, c.photo, c.name, p.price from tb_channels c JOIN tb_prices p ON c.id=p.channels_id_id order by c.order_num", nativeQuery = true)
     List<ChannelRespInt> filtrationOrderNum (String filter);
+
+    @Query(value = "select * from tb_channels  where order_num=?1", nativeQuery = true)
+    Optional<Channels> orderNums (int orderNum);
+
 }
