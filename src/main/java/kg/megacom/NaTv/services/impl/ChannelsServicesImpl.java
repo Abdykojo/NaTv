@@ -80,10 +80,6 @@ public class ChannelsServicesImpl implements ChannelsServices {
     public String saveAll(String name, int orderNum, MultipartFile multipartFile,Boolean isActive) {
         ChannelsDto dto=new ChannelsDto();
         dto.setName(name);
-        Channels channels =rep.orderNums(orderNum).orElse(null);
-        if(channels!=null){
-            throw new RuntimeException("Данный номер уже занят");
-        }else
         dto.setOrderNum(orderNum);
         dto.setActive(isActive);
         dto.setPhoto(fileServiceFeign.sendPhoto(multipartFile).getDownloadUri());

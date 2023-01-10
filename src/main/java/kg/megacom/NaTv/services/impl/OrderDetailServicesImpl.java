@@ -70,13 +70,9 @@ public class OrderDetailServicesImpl implements OrderDetailServices {
                 continue;
             }
                 BigDecimal firstPersent = priceByCount.multiply(BigDecimal.valueOf(findDiscount.getPercent()).divide(BigDecimal.valueOf(100)));
-            System.out.println(firstPersent);
                 BigDecimal second = priceByCount.subtract(firstPersent);
-            System.out.println(second);
                 BigDecimal third = second.multiply(BigDecimal.valueOf(txt.length()));
-            System.out.println(third);
                 BigDecimal four=third.multiply(BigDecimal.valueOf(countDays));
-            System.out.println(four);
             BigDecimal two= priceByCount.multiply(BigDecimal.valueOf(txt.length()));
             BigDecimal one=two.multiply(BigDecimal.valueOf(countDays));
             list.add(four);
@@ -89,11 +85,9 @@ public class OrderDetailServicesImpl implements OrderDetailServices {
         List<BigDecimal>allPrice=Arrays.asList(totalPrice);
         Map<String,List<BigDecimal>> bigList = new HashMap<>();
         bigList.put("totalPrice",allPrice);
-        System.out.println(allPrice+"ALLPRICE");
         bigList.put("prices", list);
-        System.out.println(list+"list");
         bigList.put("pricesWithoutDiscount", discPrice);
-        System.out.println(discPrice+"priceWd");
+
 
         return bigList;
     }

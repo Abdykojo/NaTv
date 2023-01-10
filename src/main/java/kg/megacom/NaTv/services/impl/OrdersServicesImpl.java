@@ -98,7 +98,6 @@ public class OrdersServicesImpl implements OrdersServices {
             chanResponses.add(chanResponse);
         }
 
-            System.out.println("saveOrdDet");
         services.saveDays(request.getChannelsRequests(),dto);
         System.out.println("ok");
 
